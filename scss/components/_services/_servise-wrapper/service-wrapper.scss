@@ -1,0 +1,53 @@
+.services{
+   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+   border-radius: 0px 0px 12px 12px;
+   position: relative;
+   &::before{
+       content: '';
+       bottom: 0;
+       background: #CACADB;
+       border-radius: 0px 0px 12px 12px;
+       height: 10px;
+       position: absolute;
+   }
+   &::after{
+      content: '';
+   }
+
+   .services-wrapper{
+      .services-text{
+         padding:50px 0;
+       p{
+         font-size: 14px;
+         line-height: 17px;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+         color: $text-col;
+       }
+       h3{
+          color: $back-col;
+          font-size: 42px;
+          line-height: 50px;
+   
+       }
+      }
+      .row{
+         padding-bottom:30px ;
+         .first{
+          padding: 0 20px;
+          padding-bottom: 50px;
+          h4{
+             font-size: 24px;
+             line-height: 28px;
+             color: #24A3FF;
+             padding: 20px 0; 
+          }
+          p{
+            font-size: 18px;
+            line-height: 26px;
+            color: $text-col;
+          }
+         }
+       }
+   }
+}

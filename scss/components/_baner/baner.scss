@@ -1,0 +1,53 @@
+.baner{
+   background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+   padding-top: $header-height;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   position: relative;
+   overflow-y: hidden;
+
+      &::after{
+         content: '';
+         background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+         position: absolute;
+         width: 100%;
+         bottom: 0;
+         height: 200px;
+
+   }
+   .center-content{
+      margin-top: -45px;
+      position: relative;
+
+      &::before,
+      &::after{
+         display: inline-block;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate( -50%, -50%);
+      }
+
+      &::before{
+         content: url('../img/frame2.svg');
+
+      }
+      &::after{
+         content: url('../img/logo2.svg');
+         width: 592px;
+         height: 232px;
+      } 
+      p{
+         font-family: TT Norms;
+         font-size: 38px;
+         line-height: 45px;
+         text-align: center;
+         color: $text-col;
+         max-width: 500px;
+         margin: 0 auto;
+         position: relative;
+         z-index: 1;
+      }
+   }
+}

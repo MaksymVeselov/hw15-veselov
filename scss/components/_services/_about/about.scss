@@ -1,0 +1,47 @@
+.about{
+   padding-top: 30px;
+   .row{
+       padding-right: 130px;
+      .list-group{  
+         padding-right: 30px;
+
+         .list-group-item {
+            font-size: 42px;
+            line-height: 50px;
+            color: #B3B3BA;
+            display: flex;
+            text-align: end;
+            padding-left: 0;
+            padding-right: 30px;
+            border: none;
+            border-right: 4px solid $text-col;
+            background-color: transparent;
+
+            &:hover{
+               color: $back-col;
+               background-color:unset;
+               border-color: $back-col;
+            }
+            }
+      }
+       .scrollspy-example{
+         
+          h2{
+             font-size: 30px;
+             line-height: 38px;
+             color: $text-col;
+             padding-bottom: 20px;
+             width: 125%;
+             padding-top: 40px;
+          }
+          p{
+            font-size: 20px;
+            line-height: 30px;
+            color: $text-col;
+            width: 130%;
+          }
+       }
+   }
+}
+
+

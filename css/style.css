@@ -1,0 +1,220 @@
+@charset "UTF-8";
+body {
+  font-family: Open Sans, sans serif;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  max-height: 89px;
+  z-index: 10;
+  padding-top: 50px;
+}
+header .header-container {
+  position: relative;
+  align-items: flex-end !important;
+}
+header .header-container .contact {
+  display: flex;
+  position: absolute;
+  right: 19px;
+  top: 0;
+  align-items: center;
+}
+header .header-container .contact .lang-svich {
+  margin-right: 15px;
+}
+header .header-container .contact .lang-svich label span {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  width: 29px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-container .contact .lang-svich label input[type=radio] {
+  display: none;
+}
+header .header-container .contact .lang-svich label input[type=radio]:checked + span {
+  background-color: #F0145A;
+}
+header .header-container .contact .address {
+  margin-right: 10px;
+}
+header .header-container .contact .address a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+header .header-container .contact .phone {
+  margin-right: 10px;
+}
+header .header-container .contact .phone::before, header .header-container .contact .phone::after {
+  content: "•";
+  color: #FFFFFF;
+  font-size: 15px;
+}
+header .header-container .contact .phone a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .header-container .collapse {
+  justify-content: flex-end;
+}
+header .header-container .collapse a {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.baner {
+  background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+  padding-top: 89px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow-y: hidden;
+}
+.baner::after {
+  content: "";
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 200px;
+}
+.baner .center-content {
+  margin-top: -45px;
+  position: relative;
+}
+.baner .center-content::before, .baner .center-content::after {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.baner .center-content::before {
+  content: url("../img/frame2.svg");
+}
+.baner .center-content::after {
+  content: url("../img/logo2.svg");
+  width: 592px;
+  height: 232px;
+}
+.baner .center-content p {
+  font-family: TT Norms;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.about {
+  padding-top: 30px;
+}
+.about .row {
+  padding-right: 130px;
+}
+.about .row .list-group {
+  padding-right: 30px;
+}
+.about .row .list-group .list-group-item {
+  font-size: 42px;
+  line-height: 50px;
+  color: #B3B3BA;
+  display: flex;
+  text-align: end;
+  padding-left: 0;
+  padding-right: 30px;
+  border: none;
+  border-right: 4px solid #FFFFFF;
+  background-color: transparent;
+}
+.about .row .list-group .list-group-item:hover {
+  color: #F0145A;
+  background-color: unset;
+  border-color: #F0145A;
+}
+.about .row .scrollspy-example h2 {
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+  width: 125%;
+  padding-top: 40px;
+}
+.about .row .scrollspy-example p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  width: 130%;
+}
+
+.services {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+  position: relative;
+}
+.services::before {
+  content: "";
+  bottom: 0;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+  height: 10px;
+  position: absolute;
+}
+.services::after {
+  content: "";
+}
+.services .services-wrapper .services-text {
+  padding: 50px 0;
+}
+.services .services-wrapper .services-text p {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.services .services-wrapper .services-text h3 {
+  color: #F0145A;
+  font-size: 42px;
+  line-height: 50px;
+}
+.services .services-wrapper .row {
+  padding-bottom: 30px;
+}
+.services .services-wrapper .row .first {
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+.services .services-wrapper .row .first h4 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #24A3FF;
+  padding: 20px 0;
+}
+.services .services-wrapper .row .first p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
